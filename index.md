@@ -9,10 +9,10 @@ title: Accueil
 
 ## 🎯 Projets
 
-### [Infrastructure Hybride Cloud](./projects/cloud-hybride.md)
+### [Infrastructure Hybride Cloud](./projects/cloud-hybride)
 Architecture on-premise + AWS avec monitoring et SIEM
 
-### [CTF WriteUps - Root-Me](./projects/ctf-writeups.md)
+### [CTF WriteUps - Root-Me](./projects/ctf-writeups)
 Solutions de challenges (500+ points)
 
 ## 📫 Contact
