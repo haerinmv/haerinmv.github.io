@@ -1,20 +1,35 @@
 ---
 layout: default
-title: Accueil
+title: Home
 ---
 
-# Portfolio - Yassine Haerinmv
+<link rel="stylesheet" href="./assets/css/style.css">
 
-Étudiant en cybersécurité (Bac+2) | Cloud Security | Pentesting
+<header>
+  <h1>Hey, it's Haerinmv</h1>
+  <p class="subtitle">Cybersecurity Student | Cloud Security | Pentesting</p>
+</header>
 
-## 🎯 Projets
+<div class="container">
 
-### [Infrastructure Hybride Cloud](./projects/cloud-hybride)
-Architecture on-premise + AWS avec monitoring et SIEM
+## 🎯 Projects
 
-### [CTF WriteUps - Root-Me](./projects/ctf-writeups)
-Solutions de challenges (500+ points)
+<div class="project-card">
+  <h3><a href="./projects/cloud-hybride">Infrastructure Hybride Cloud</a></h3>
+  <p>Architecture on-premise + AWS avec monitoring et SIEM</p>
+</div>
 
-## 📫 Contact
-- GitHub: [haerinmv](https://github.com/haerinmv)
-- LinkedIn: [ton-profil]
+<div class="project-card">
+  <h3><a href="./projects/ctf-writeups">CTF WriteUps - Root-Me</a></h3>
+  <p>Solutions de challenges (500+ points)</p>
+</div>
+
+<div class="contact">
+  <h2>📫 Contact</h2>
+  <ul>
+    <li>GitHub: <a href="https://github.com/haerinmv">haerinmv</a></li>
+    <li>LinkedIn: <a href="#">[ton-profil]</a></li>
+  </ul>
+</div>
+
+</div>

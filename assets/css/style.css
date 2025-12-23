@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 100%);
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid #00ff88;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #00ff88;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #b0b0b0;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #00ff88;
+  font-size: 2em;
+  margin: 40px 0 20px 0;
+  border-left: 4px solid #00ff88;
+  padding-left: 15px;
+}
+
+h3 {
+  color: #00d4ff;
+  font-size: 1.5em;
+  margin: 30px 0 15px 0;
+}
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #00ff88;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ff88;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+  border-color: #00d4ff;
+}
+
+.contact {
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(0, 255, 136, 0.1);
+  border-radius: 8px;
+  border: 1px solid #00ff88;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+li::before {
+  content: "▹ ";
+  color: #00ff88;
+  font-weight: bold;
+}
