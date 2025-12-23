@@ -1,22 +1,20 @@
 ---
 layout: default
-title: Portfolio – Yassine
+title: Accueil
 ---
 
-# 👋 Yassine
+# Portfolio - Yassine Haerinmv
 
-🎓 Étudiant en cybersécurité  
-🚀 Portfolio – projets en cours
+Étudiant en cybersécurité (Bac+2) | Cloud Security | Pentesting
 
-## 🔐 Compétences
-- Réseaux & Sécurité
-- Linux / Parrot OS
-- Docker / Infra
-- Bases ML & monitoring
+## 🎯 Projets
 
-## 📂 Projets
-- 🛠️ Architecture cloud hybride (en cours)
-- 🤖 Pipeline ML sécurité (en cours)
+### [Infrastructure Hybride Cloud](./projects/cloud-hybride.md)
+Architecture on-premise + AWS avec monitoring et SIEM
+
+### [CTF WriteUps - Root-Me](./projects/ctf-writeups.md)
+Solutions de challenges (500+ points)
 
 ## 📫 Contact
-- GitHub : https://github.com/haerinmv
+- GitHub: [haerinmv](https://github.com/haerinmv)
+- LinkedIn: [ton-profil]
