@@ -1,35 +1,31 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haerinmv</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="hero">
+    <h1>Hey, it's Haerinmv</h1>
+    <p>Cybersecurity Student | Cloud Security | Pentesting</p>
+    
+    <div class="menu">
+      <a href="./projects/cloud-hybride" class="menu-item">
+        Infrastructure Hybride Cloud
+      </a>
+      <a href="./projects/ctf-writeups" class="menu-item">
+        CTF WriteUps - Root-Me
+      </a>
+      <a href="https://github.com/haerinmv" class="menu-item">
+        GitHub Profile
+      </a>
+    </div>
 
-<link rel="stylesheet" href="./assets/css/style.css">
-
-<header>
-  <h1>Hey, it's Haerinmv</h1>
-  <p class="subtitle">Cybersecurity Student | Cloud Security | Pentesting</p>
-</header>
-
-<div class="container">
-
-## 🎯 Projects
-
-<div class="project-card">
-  <h3><a href="./projects/cloud-hybride">Infrastructure Hybride Cloud</a></h3>
-  <p>Architecture on-premise + AWS avec monitoring et SIEM</p>
-</div>
-
-<div class="project-card">
-  <h3><a href="./projects/ctf-writeups">CTF WriteUps - Root-Me</a></h3>
-  <p>Solutions de challenges (500+ points)</p>
-</div>
-
-<div class="contact">
-  <h2>📫 Contact</h2>
-  <ul>
-    <li>GitHub: <a href="https://github.com/haerinmv">haerinmv</a></li>
-    <li>LinkedIn: <a href="#">[ton-profil]</a></li>
-  </ul>
-</div>
-
-</div>
+    <div class="footer">
+      Never Mind - Just Say Hi
+    </div>
+  </div>
+</body>
+</html>
