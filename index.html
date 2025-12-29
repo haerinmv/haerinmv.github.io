@@ -35,11 +35,14 @@
   </main>
 
   <!-- ANIMATION SCRIPT -->
-  <script>
-    window.addEventListener("load", () => {
-      document.querySelector(".hero").classList.add("hero-appear");
-    });
-  </script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
+    setTimeout(() => {
+      hero.classList.add("hero-appear");
+    }, 150);
+  });
+</script>
 
 </body>
 </html>
