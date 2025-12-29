@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* ===== SIDEBAR ===== */
@@ -75,6 +76,9 @@ body {
   text-align: center;
   max-width: 900px;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ===== TEXT ===== */
@@ -84,8 +88,8 @@ body {
   letter-spacing: -0.03em;
   line-height: 1.1;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(-30px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-title.appear {
@@ -100,8 +104,8 @@ body {
   color: #9e9e9e;
   letter-spacing: -0.01em;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-sub.appear {

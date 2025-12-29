@@ -32,15 +32,15 @@
       const title = document.querySelector(".hero-title");
       const sub = document.querySelector(".hero-sub");
       
-      // Title appears first
+      // Title appears first (slightly above final position)
       setTimeout(() => {
         title.classList.add("appear");
-      }, 200);
+      }, 300);
       
-      // Subtitle follows after
+      // Subtitle slides up with fade after title settles
       setTimeout(() => {
         sub.classList.add("appear");
-      }, 800);
+      }, 1000);
     });
   </script>
 </body>
