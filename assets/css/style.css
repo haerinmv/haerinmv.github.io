@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
   min-height: 100vh;
   background: radial-gradient(
@@ -22,20 +23,7 @@ body {
   justify-content: center;
 }
 
-.hero {
-  text-align: center;
-}
-
-h1 {
-  font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 300;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-}
-
-h1 span {
-  font-weight: 400;
-}
+/* ===== SIDEBAR ===== */
 .sidebar {
   position: fixed;
   left: 20px;
@@ -43,47 +31,127 @@ h1 span {
   transform: translateY(-50%);
 
   background: rgba(20, 20, 20, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 
   border-radius: 20px;
-  padding: 12px;
+  padding: 14px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .sidebar .logo {
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .sidebar ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .sidebar a {
-  color: #EDEDED;
-  text-decoration: none;
-  font-size: 18px;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: #EDEDED;
+  text-decoration: none;
+  font-size: 18px;
 
   transition: background 0.2s ease;
 }
 
 .sidebar a:hover {
   background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+}
+
+/* animation state (hidden) */
+.hero-title,
+.hero-sub,
+.hero-buttons {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+/* animation visible */
+.hero-appear .hero-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero-appear .hero-sub {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.hero-appear .hero-buttons {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+/* ===== TEXT ===== */
+.hero-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.hero-sub {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  color: #bdbdbd;
+}
+
+/* ===== BUTTONS ===== */
+.hero-buttons {
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 0 8px;
+
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #2a2a2a;
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
 }

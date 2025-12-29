@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haerinmv</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-<nav class="sidebar">
-  <a href="index.html" class="logo">H</a>
 
-  <ul>
-    <li><a href="index.html" title="Home">🏠</a></li>
-    <li><a href="projects.html" title="Projects">☁️</a></li>
-    <li><a href="security.html" title="Security">🔐</a></li>
-    <li><a href="skills.html" title="Skills">🧠</a></li>
-    <li><a href="contact.html" title="Contact">📄</a></li>
-  </ul>
-</nav>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <a href="#" class="logo">H</a>
+    <ul>
+      <li><a href="#" title="Home">🏠</a></li>
+      <li><a href="projects.html" title="Projects">💻</a></li>
+      <li><a href="about.html" title="About">👤</a></li>
+      <li><a href="contact.html" title="Contact">✉️</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
   <main class="hero">
-    <h1>Hey, it's <span>Haerinmv</span></h1>
+    <h1 class="hero-title">Hey, I'm Yassine.</h1>
+    <p class="hero-sub">
+      Cybersecurity student focused on cloud & infrastructure security.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn">See Projects</a>
+      <a href="contact.html" class="btn secondary">Contact Me</a>
+    </div>
   </main>
+
+  <!-- ANIMATION SCRIPT -->
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".hero").classList.add("hero-appear");
+    });
+  </script>
+
 </body>
 </html>
