@@ -4,12 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haerinmv</title>
-
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
-
   <!-- SIDEBAR -->
   <nav class="sidebar">
     <a href="#" class="logo">H</a>
@@ -20,29 +17,31 @@
       <li><a href="contact.html" title="Contact">✉️</a></li>
     </ul>
   </nav>
-
+  
   <!-- HERO -->
   <main class="hero">
     <h1 class="hero-title">Hey, I'm Yassine.</h1>
     <p class="hero-sub">
       Cybersecurity student focused on cloud & infrastructure security.
     </p>
-
-    <div class="hero-buttons">
-      <a href="projects.html" class="btn">See Projects</a>
-      <a href="contact.html" class="btn secondary">Contact Me</a>
-    </div>
   </main>
 
   <!-- ANIMATION SCRIPT -->
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const hero = document.querySelector(".hero");
-    setTimeout(() => {
-      hero.classList.add("hero-appear");
-    }, 150);
-  });
-</script>
-
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const title = document.querySelector(".hero-title");
+      const sub = document.querySelector(".hero-sub");
+      
+      // Title appears first
+      setTimeout(() => {
+        title.classList.add("appear");
+      }, 200);
+      
+      // Subtitle follows after
+      setTimeout(() => {
+        sub.classList.add("appear");
+      }, 800);
+    });
+  </script>
 </body>
 </html>

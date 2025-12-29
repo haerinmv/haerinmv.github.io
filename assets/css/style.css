@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -16,8 +16,7 @@ body {
     #000000 100%
   );
   color: #EDEDED;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-
+  font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,17 +28,15 @@ body {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(12px);
-
   border-radius: 20px;
   padding: 14px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  z-index: 100;
 }
 
 .sidebar .logo {
@@ -60,15 +57,12 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: #EDEDED;
   text-decoration: none;
   font-size: 18px;
-
   transition: background 0.2s ease;
 }
 
@@ -79,79 +73,38 @@ body {
 /* ===== HERO ===== */
 .hero {
   text-align: center;
-}
-
-/* animation state (hidden) */
-.hero-title,
-.hero-sub,
-.hero-buttons {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-/* animation visible */
-.hero-appear .hero-title {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s;
-}
-
-.hero-appear .hero-sub {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.5s;
-}
-
-.hero-appear .hero-buttons {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.8s;
+  max-width: 900px;
+  padding: 0 20px;
 }
 
 /* ===== TEXT ===== */
 .hero-title {
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 300;
-  letter-spacing: -0.04em;
+  font-weight: 400;
+  letter-spacing: -0.03em;
   line-height: 1.1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-title.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-sub {
-  margin-top: 16px;
-  font-size: 1.1rem;
-  color: #bdbdbd;
+  margin-top: 20px;
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: #9e9e9e;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* ===== BUTTONS ===== */
-.hero-buttons {
-  margin-top: 32px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  margin: 0 8px;
-
-  border-radius: 10px;
-  background: #1a1a1a;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-
-  transition: background 0.25s ease, transform 0.25s ease;
-}
-
-.btn:hover {
-  background: #2a2a2a;
-  transform: translateY(-2px);
-}
-
-.btn.secondary {
-  background: transparent;
-  border: 1px solid #2a2a2a;
-}
-
-.btn.secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+.hero-sub.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
